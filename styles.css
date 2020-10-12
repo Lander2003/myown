@@ -1,0 +1,352 @@
+:root{
+  font-size: 16px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3{
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Utilities */
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.btn-1{
+  border: none;
+  padding: 10px 20px;
+  background-color: #1a7af7;
+  color: white;
+  transition: .2s background ease;
+  cursor: pointer;
+}
+
+.btn-1:hover{
+  background-color:#98c5ff;
+}
+
+
+
+.display{
+  display:all !important;
+}
+
+.displayBlock{
+  display: block !important;
+}
+
+.line{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+}
+
+
+/* Header */
+
+header{
+  height: 100vh;
+  background: url("main.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color:#082c5d;
+  color: white;
+}
+
+nav{
+  padding: 15px 0;
+  background-color: white;
+  animation-name: navbar;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes navbar{
+  from{padding-right: 400px; opacity: 0;};
+  to{padding-right: 0; opacity: 1}
+}
+
+.logo{
+  color: black;
+  margin-right: auto;
+  font-size: 1.3rem;
+  margin-left: 5px;
+}
+
+.toggle{
+  color: black;
+  font-size: 3rem;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links{
+  display: flex;
+}
+
+nav ul a{
+color: black;
+text-decoration: none;
+font-size: 14px;
+padding: 0 10px;
+transition: .2s color ease;
+}
+
+nav ul a:hover{
+  color: #4695ff;
+}
+
+
+/* Main */
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+}
+
+main h1{
+  font-size: 4rem;
+  font-weight: bold;
+  animation-name: headings;
+  animation-duration: 2s;
+}
+
+main h3{
+  font-size: 2rem;
+  animation-name: headings;
+  animation-duration: 2s;
+}
+
+
+/* Proekti */
+
+#proekti{
+  padding: 120px 0;
+}
+
+#proekti .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#proekti #za-mene{
+  flex-basis: 60%;
+}
+
+#proekti #za-mene h1{
+  font-size: 3rem;
+}
+#proekti #za-mene hr{
+  width: 100px;
+  margin-left:0;
+  border: none;
+  height: 8px;
+  background-color: #64a7ff;
+}
+
+#proekti aside{
+  flex-basis: 25%;
+  padding: 20px;
+  background-color: #64a7ff;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 2px 10px #0000004a;
+  transition: .2s background ease;
+}
+#proekti aside:hover{
+  background-color: #1a7af7;
+}
+
+#proekti aside a{
+  color: white;
+  text-decoration: none;
+
+}
+#proekti aside h1{
+  font-size: 1.5rem;
+}
+
+
+#programiranje{
+  padding: 120px 0;
+  background-color:#ececec;
+}
+
+#programiranje h1{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#programiranje .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.program{
+  background-color: white;
+  padding: 30px;
+  flex-basis: 60%;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.img-box{
+  align-self: center;
+  flex-basis: 20%;
+}
+
+.img-box img{
+  width: 100%;
+}
+
+/* Contact */
+
+#contact{
+  padding: 120px 0;
+}
+
+#contact .container{
+  text-align: center;
+}
+
+#contact input{
+  padding: 5px;
+}
+
+#contact textarea{
+    resize: none;
+    width:100%;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+/* Footer */
+
+footer{
+  background-color: #1a7af7;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  transition: .2s color ease;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+footer a:hover{
+  color: #c4ddff;
+}
+
+footer p{
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+@keyframes headings{
+  from{margin-top: 150px; opacity: 0;};
+  to{margin-top: 0; opacity:1}
+}
+
+
+@media only screen and (min-width: 1300px){
+  :root{
+    font-size: 14px;
+  }
+
+  .display{
+    display: all !important;
+  }
+  .toggle{
+    display: none;
+  }
+  .nav-links, .navbar{
+    display: flex !important;
+  }
+}
+
+
+@media only screen and (max-width: 1000px){
+  :root{
+    font-size: 14px;
+  }
+
+  #proekti .container, #programiranje .container{
+    display: block;
+  }
+
+   .img-box{
+     text-align: center;
+   }
+
+  .img-box img{
+    width: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 700px){
+  :root{
+    font-size: 12px;
+  }
+  .display{
+    display: none !important;
+  }
+  .toggle{
+    display: block;
+  }
+  nav .nav-links li{
+    margin: 10px;
+  }
+
+}
